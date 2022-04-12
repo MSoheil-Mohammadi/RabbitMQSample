@@ -8,7 +8,7 @@ ConnectionFactory factory = new() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
-    channel.QueueDeclare(queue: "Hello",
+    channel.QueueDeclare(queue: "task_queue",
                          durable: false,
                          exclusive: false,
                          autoDelete: false,
