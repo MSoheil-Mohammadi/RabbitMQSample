@@ -2,7 +2,7 @@
 using RabbitMQ.Client.Events;
 using System.Text;
 
-Console.WriteLine("Work Queues Worker");
+Console.WriteLine("Work Queues Worker2");
 
 ConnectionFactory factory = new() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
