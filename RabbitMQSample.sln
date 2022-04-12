@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkQueues.NewTask", "WorkQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkQueues.Worker", "WorkQueues.Worker\WorkQueues.Worker.csproj", "{A1B8072D-1413-49CF-A50F-8B838DE2EC3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkQueues.Worker2", "WorkQueues.Worker2\WorkQueues.Worker2.csproj", "{97B088BC-F846-4657-AE5D-E4573604529A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A1B8072D-1413-49CF-A50F-8B838DE2EC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1B8072D-1413-49CF-A50F-8B838DE2EC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1B8072D-1413-49CF-A50F-8B838DE2EC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B088BC-F846-4657-AE5D-E4573604529A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B088BC-F846-4657-AE5D-E4573604529A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B088BC-F846-4657-AE5D-E4573604529A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B088BC-F846-4657-AE5D-E4573604529A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{B4187CEC-C4FC-49E6-BC4F-D79FA6CEB4AC} = {16324439-4B19-4A64-BB63-DEE4BE926C8D}
 		{BBC8A731-EBE1-4EE6-BB55-CBB73B2A60FB} = {D6063BFF-B615-443B-B9F0-5E78120B6AB9}
 		{A1B8072D-1413-49CF-A50F-8B838DE2EC3F} = {D6063BFF-B615-443B-B9F0-5E78120B6AB9}
+		{97B088BC-F846-4657-AE5D-E4573604529A} = {D6063BFF-B615-443B-B9F0-5E78120B6AB9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1493DE3B-6EE6-4401-BC30-1E2AF8F48F87}
