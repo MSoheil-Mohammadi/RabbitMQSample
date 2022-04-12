@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WorkQueues.NewTask": {
+      "commandName": "Project",
+      "commandLineArgs": "\"First message.\" \"Second message..\" \"Third message...\" \"Fourth message....\" \"Fifth message.....\""
+    }
+  }
+}

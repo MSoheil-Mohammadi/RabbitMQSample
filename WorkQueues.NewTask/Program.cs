@@ -15,23 +15,21 @@ using (var channel = connection.CreateModel())
                          autoDelete: false,
                          arguments: null);
 
-    string message = GetMessage(args);
-    byte[] body = Encoding.UTF8.GetBytes(message);
+    while (true)
+    {
+        string message = Console.ReadLine().ToString();
+        byte[] body = Encoding.UTF8.GetBytes(message);
 
-    var properties = channel.CreateBasicProperties();
-    properties.Persistent = true;
+        var properties = channel.CreateBasicProperties();
+        properties.Persistent = true;
 
-    channel.BasicPublish(exchange: "",
-                         routingKey: "task_queue",
-                         basicProperties: properties,
-                         body: body);
+        channel.BasicPublish(exchange: "",
+                             routingKey: "task_queue",
+                             basicProperties: properties,
+                             body: body);
 
-    Console.WriteLine($" [x] Sent {message}");
-}
-
-string GetMessage(string[] args)
-{
-    return ((args.Length > 0) ? string.Join(" ", args) : "Hello World!");
+        Console.WriteLine($" [x] Sent {message}");
+    }
 }
 
 Console.WriteLine(" Press [enter] to exit.");
