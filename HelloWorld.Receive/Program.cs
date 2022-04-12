@@ -8,7 +8,7 @@ ConnectionFactory factory = new() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
-    channel.QueueDeclare(queue: "hello",
+    channel.QueueDeclare(queue: "Hello",
                          durable: false,
                          exclusive: false,
                          autoDelete: false,
@@ -22,7 +22,7 @@ using (var channel = connection.CreateModel())
         global::System.Console.WriteLine(" [x] Received {0}", message);
     };
 
-    channel.BasicConsume(queue:"hello", autoAck:true, consumer:consumer);
+    channel.BasicConsume(queue: "Hello", autoAck:true, consumer:consumer);
 
     Console.WriteLine(" Press [enter] to exit.");
     Console.ReadLine();
