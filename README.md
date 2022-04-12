@@ -20,3 +20,12 @@ Consuming has a similar meaning to receiving. A consumer is a program that mostl
 
 Note that the producer, consumer, and broker do not have to reside on the same host.
 An application can be both a producer and consumer, too.
+
+## Send notes
+The publisher will connect to RabbitMQ, send a single message, then exit.
+
+The connection abstracts the socket connection, and takes care of protocol version negotiation and authentication and so on for us. 
+channel, which is where most of the API for getting things done resides.
+To send, we must declare a queue for us to send to; then we can publish a message to the queue
+The message content is a byte array.
+When the code above (send/console proj) finishes running, the channel and the connection will be disposed.
