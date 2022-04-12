@@ -9,16 +9,16 @@ using (var connection = factory.CreateConnection())
 // create channel
 using (var channel = connection.CreateModel())
 {
-    channel.QueueDeclare(queue: "Hello",
-                         durable: false,
-                         exclusive: false,
-                         autoDelete: false,
-                         arguments: null);
+    channel.QueueDeclare(queue: "task_queue",
+                                 durable: true,
+                                 exclusive: false,
+                                 autoDelete: false,
+                                 arguments: null);
 
     while (true)
     {
-        string message = Console.ReadLine().ToString();
-        byte[] body = Encoding.UTF8.GetBytes(message);
+        var message = Console.ReadLine();
+        var body = Encoding.UTF8.GetBytes(message);
 
         var properties = channel.CreateBasicProperties();
         properties.Persistent = true;
@@ -27,10 +27,8 @@ using (var channel = connection.CreateModel())
                              routingKey: "task_queue",
                              basicProperties: properties,
                              body: body);
-
-        Console.WriteLine($" [x] Sent {message}");
+        Console.WriteLine(" [x] Sent {0}", message);
     }
 }
 
-Console.WriteLine(" Press [enter] to exit.");
 Console.ReadLine();
