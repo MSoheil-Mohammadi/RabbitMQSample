@@ -1,7 +1,7 @@
 ﻿using RabbitMQ.Client;
 using System.Text;
 
-Console.WriteLine("Receive");
+Console.WriteLine("Send");
 
 // create connection to Server
 ConnectionFactory factory = new() { HostName = "localhost" };
