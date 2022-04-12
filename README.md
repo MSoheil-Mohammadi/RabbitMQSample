@@ -30,8 +30,3 @@ To send, we must declare a queue for us to send to; then we can publish a messag
 The message content is a byte array.
 When the code above (send/console proj) finishes running, the channel and the connection will be disposed.
 
-
-## Work Queues Introduction
-
-In this one we'll create a Work Queue that will be used to distribute time-consuming tasks among multiple workers.
-The main idea behind Work Queues (aka: Task Queues) is to avoid doing a resource-intensive task immediately and having to wait for it to complete.
