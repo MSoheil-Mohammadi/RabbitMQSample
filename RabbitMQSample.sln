@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Hello World", "00. Hell
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Send", "HelloWorld.Send\HelloWorld.Send.csproj", "{517ADC56-39C2-4AA0-BB84-34824E8AD8CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Receive", "HelloWorld.Receive\HelloWorld.Receive.csproj", "{B4187CEC-C4FC-49E6-BC4F-D79FA6CEB4AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{517ADC56-39C2-4AA0-BB84-34824E8AD8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{517ADC56-39C2-4AA0-BB84-34824E8AD8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{517ADC56-39C2-4AA0-BB84-34824E8AD8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4187CEC-C4FC-49E6-BC4F-D79FA6CEB4AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4187CEC-C4FC-49E6-BC4F-D79FA6CEB4AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4187CEC-C4FC-49E6-BC4F-D79FA6CEB4AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4187CEC-C4FC-49E6-BC4F-D79FA6CEB4AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{517ADC56-39C2-4AA0-BB84-34824E8AD8CD} = {16324439-4B19-4A64-BB63-DEE4BE926C8D}
+		{B4187CEC-C4FC-49E6-BC4F-D79FA6CEB4AC} = {16324439-4B19-4A64-BB63-DEE4BE926C8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1493DE3B-6EE6-4401-BC30-1E2AF8F48F87}
