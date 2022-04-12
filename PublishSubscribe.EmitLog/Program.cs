@@ -16,7 +16,6 @@ using (var channel = connection.CreateModel())
     Console.WriteLine(" [x] Sent {0}", message);
 }
 
-Console.WriteLine(" Press [enter] to exit.");
 Console.ReadLine();
 
 static string GetMessage(string[] args)
