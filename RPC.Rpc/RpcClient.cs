@@ -42,4 +42,21 @@ public class RpcClient
             queue: replyQueueName,
             autoAck: true);
     }
+
+    public string Call(string message)
+    {
+        var messageBytes = Encoding.UTF8.GetBytes(message);
+        channel.BasicPublish(
+            exchange: "",
+            routingKey: "rpc_queue",
+            basicProperties: props,
+            body: messageBytes);
+
+        return respQueue.Take();
+    }
+
+    public void Close()
+    {
+        connection.Close();
+    }
 }
