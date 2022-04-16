@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Routing", "03. Routing"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing.EmitLogDirect", "Routing.EmitLogDirect\Routing.EmitLogDirect.csproj", "{133D5765-6689-4EEA-A6B8-EBF963638FB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing.ReceiveLogsDirect", "Routing.ReceiveLogsDirect\Routing.ReceiveLogsDirect.csproj", "{0C87BE53-8C06-43EE-B316-579FFB7C5A14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{133D5765-6689-4EEA-A6B8-EBF963638FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{133D5765-6689-4EEA-A6B8-EBF963638FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{133D5765-6689-4EEA-A6B8-EBF963638FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C87BE53-8C06-43EE-B316-579FFB7C5A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C87BE53-8C06-43EE-B316-579FFB7C5A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C87BE53-8C06-43EE-B316-579FFB7C5A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C87BE53-8C06-43EE-B316-579FFB7C5A14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{EEF1FC6C-6EAD-41FB-8FAA-86A81C10B5C0} = {0AF380EA-E268-4349-8882-01974554A2BA}
 		{85B4F15F-2D06-40AC-AA50-4CEDFF6E9295} = {0AF380EA-E268-4349-8882-01974554A2BA}
 		{133D5765-6689-4EEA-A6B8-EBF963638FB3} = {07E6B208-E0D3-4F89-8919-7CD8ABFBA598}
+		{0C87BE53-8C06-43EE-B316-579FFB7C5A14} = {07E6B208-E0D3-4F89-8919-7CD8ABFBA598}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1493DE3B-6EE6-4401-BC30-1E2AF8F48F87}
